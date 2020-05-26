@@ -1,28 +1,60 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="page">
+    <div class="title">
+      <h1>Josh Hughes</h1>
+    </div>
+    <div class="left-panel">
+      <Navbar class="navbar" />
+    </div>
+    <div class="right-panel">
+      <div class="content-area">
+        <ol>
+          Todo:
+          <li>Listen to event emitted by navbar component. Load new page content from event here.</li>
+          <li>Styling</li>
+          <li>Add pages</li> 
+        </ol>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Navbar from './components/Navbar'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    components: {
+      Navbar
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .page {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .left-panel {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .right-panel {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+  }
+
+  .content-area {
+    border: 1px solid black;
+    padding: 15px;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    border: 1px solid black;
+    padding: 10px 10px 10px 20px;
+  }
+
 </style>

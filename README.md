@@ -1,4 +1,5 @@
-# profile
+# Profile
+Personal profile written in VueJS
 
 ## Project setup
 ```
