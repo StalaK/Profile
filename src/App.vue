@@ -4,16 +4,14 @@
       <h1>Josh Hughes</h1>
     </div>
     <div class="left-panel">
-      <Navbar class="navbar" />
+      <Navbar class="navbar" v-on:navigate="displayPage($event)"/>
     </div>
     <div class="right-panel">
       <div class="content-area">
-        <ol>
-          Todo:
-          <li>Listen to event emitted by navbar component. Load new page content from event here.</li>
-          <li>Styling</li>
-          <li>Add pages</li> 
-        </ol>
+        <Home v-if="displayedPage == 'home'" />
+        <About v-if="displayedPage == 'about'" />
+        <Portfolio v-if="displayedPage == 'portfolio'" />
+        <Contact v-if="displayedPage == 'contact'" />
       </div>
     </div>
   </div>
@@ -21,10 +19,28 @@
 
 <script>
   import Navbar from './components/Navbar'
+  import About from './components/About'
+  import Contact from './components/Contact'
+  import Home from './components/Home'
+  import Portfolio from './components/Portfolio'
 
   export default {
     components: {
-      Navbar
+      Navbar,
+      About,
+      Contact,
+      Home,
+      Portfolio
+    },
+    data () { 
+      return {
+        displayedPage: 'home'
+      }
+    },
+    methods: {
+      displayPage: function (page) {
+        this.displayedPage = page;
+      }
     }
   }
 </script>
