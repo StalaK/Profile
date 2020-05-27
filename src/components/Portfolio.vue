@@ -20,7 +20,7 @@
             <PortfolioBlock 
                 title="Portfolio Block 4" 
                 description="Description of work" 
-                :height="150"
+                :height="150" 
                 :width="400" />
         </div>
     </div>
