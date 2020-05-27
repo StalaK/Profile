@@ -14,6 +14,9 @@
         <Contact v-if="displayedPage == 'contact'" />
       </div>
     </div>
+    <div class="twitter-panel">
+      <a class="twitter-timeline" data-width="500" data-height="400" data-dnt="true" data-theme="light" href="https://twitter.com/Wow_Josh?ref_src=twsrc%5Etfw">Tweets by Wow_Josh</a> 
+    </div>
   </div>
 </template>
 
@@ -37,6 +40,11 @@
         displayedPage: 'home'
       }
     },
+    mounted: function () {
+      let twitterScript = document.createElement('script');
+      twitterScript.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+      document.head.appendChild(twitterScript);
+    },
     methods: {
       displayPage: function (page) {
         this.displayedPage = page;
@@ -53,13 +61,22 @@
 
   .left-panel {
     display: inline-block;
-    width: 20%;
+    width: 10%;
   }
 
   .right-panel {
     display: inline-block;
-    width: 75%;
+    width: 60%;
     vertical-align: top;
+  }
+
+  .twitter-panel {
+    margin-left: 15px;
+    padding: 5px;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    border: 1px solid black;
   }
 
   .content-area {
