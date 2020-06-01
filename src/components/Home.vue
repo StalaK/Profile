@@ -7,11 +7,13 @@
         <p>
             Todo:
             <ol>
-            <li>Styling</li>
-            <li>Routing</li>
-            <li>Actual content</li>
-            <li>Fix PortfolioBlock component animation jank</li>
-            <li>Fix PortfolioBlock images</li>
+                <li>Styling</li>
+                <li>Routing</li>
+                <li>Actual content</li>
+                <li>Fix PortfolioBlock component animation jank</li>
+                <li>Fix PortfolioBlock images</li>
+                <li>PortfolioBlock not displaying correctly after deployment</li>
+                <li>Mobile compatibility</li>
             </ol>
         </p>
     </div>
