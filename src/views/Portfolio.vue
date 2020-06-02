@@ -27,7 +27,7 @@
 </template>
 
 <script>
-    import PortfolioBlock from './PortfolioBlock'
+    import PortfolioBlock from '@/components/PortfolioBlock'
 
     export default {
         components: {
