@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="portfolio-row">
+    <b-container>
+        <b-row>
             <PortfolioBlock 
                     title="Portfolio Block 1" 
                     description="Description of work" />
@@ -22,8 +22,8 @@
                 description="Description of work" 
                 :height="150" 
                 :width="400" />
-        </div>
-    </div>
+        </b-row>
+    </b-container>
 </template>
 
 <script>

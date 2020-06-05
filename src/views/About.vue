@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <b-container>
         <p>Hi there, I'm Josh Hughes. A full stack software developer from Leeds, UK.</p>
         <p>
             I obtained a degree in Artificial Intelligence and Robotics back in 2013, where I then began a career as a software test consultant 
@@ -46,7 +46,7 @@
             </div> 
         </div>
         <p>For a copy of my CV, please contact me</p>
-    </div>
+    </b-container>
 </template>
 
 <script>

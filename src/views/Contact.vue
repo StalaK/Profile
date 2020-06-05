@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <b-container>
         Contact
-    </div>
+    </b-container>
 </template>
 
 <script>

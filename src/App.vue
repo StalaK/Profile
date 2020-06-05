@@ -1,13 +1,15 @@
 <template>
-  <div id="app">
+  <b-container id="app" fluid>
     <Layout>
       <router-view />
     </Layout>
-  </div>
+  </b-container>
 </template>
 
 <script>
   import Layout from '@/components/Layout'
+  import 'bootstrap/dist/css/bootstrap.css'
+  import 'bootstrap-vue/dist/bootstrap-vue.css'
 
   export default {
     components: {
