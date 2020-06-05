@@ -34,7 +34,7 @@
     border: 1px solid black;
     padding: 15px;
     margin: 5px 10px 5px 0px;
+    height:fit-content;
   }
-
 
 </style>

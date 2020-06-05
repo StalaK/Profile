@@ -1,7 +1,9 @@
 <template>
   <b-container id="app" fluid>
     <Layout>
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </Layout>
   </b-container>
 </template>
@@ -24,4 +26,17 @@
 </script>
 
 <style>
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+
+  .fade-leave-active {
+    transition: opacity .5s;
+  }
+  
+  .fade-enter, .fade-leave-to  {
+    opacity: 0;
+  }
+
 </style>
