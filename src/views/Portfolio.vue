@@ -2,26 +2,11 @@
     <b-container>
         <b-row>
             <PortfolioBlock 
-                    title="Portfolio Block 1" 
-                    description="Description of work" />
-                
-            <PortfolioBlock 
-                title="Portfolio Block 2" 
-                description="Description of work" 
-                titleBgColour="orange" 
-                titleColour="#FF0000" />
-
-            <PortfolioBlock 
-                title="Portfolio Block 3" 
-                description="Description of work" 
-                descriptionbgColour="#00AA00" 
-                descriptionColour="yellow" />
-
-            <PortfolioBlock 
-                title="Portfolio Block 4" 
-                description="Description of work" 
-                :height="150" 
-                :width="400" />
+            description="A website for displaying my portfolio of work"
+            titleBgColour="lightblue"
+            titleColour="grey">
+                <div class="developer-profile-text">Developer Profile</div>
+            </PortfolioBlock>
         </b-row>
     </b-container>
 </template>
@@ -37,5 +22,11 @@
 </script>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
 
+    .developer-profile-text {
+        font-family: 'Lexend Tera', sans-serif;
+        font-style:oblique;
+        padding: 10px;
+    }
 </style>

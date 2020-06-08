@@ -2,8 +2,7 @@
     <div class="spacer">
         <div class="portfolio-block" :style="portfolioBlockStyle">
             <div class="portfolio-title">
-                <span v-if="titleType == 'image'"><img :src="title" /></span>
-                <span v-else>{{ title }}</span>
+                <slot></slot>
             </div>
             <div class="portfolio-description" :style="portfolioDescriptionStyle">
                 {{ description }}
@@ -15,15 +14,6 @@
 <script>
     export default {
         props: {
-            title: {
-                type: String,
-                required: true
-            },
-            titleType: {
-                type: String,
-                default: 'string',
-                required: false
-            },
             titleBgColour: {
                 type: String,
                 default: 'white',
@@ -91,6 +81,7 @@
         border: 1px solid black;
         display: block;
         overflow: hidden;
+        cursor: pointer;
     }
 
     .portfolio-block:hover .portfolio-description {
@@ -107,6 +98,11 @@
         animation-fill-mode: forwards;
     }
 
+    .portfolio-title {
+        position: absolute;
+        width: inherit;
+    }
+
     .portfolio-description {
         opacity: 50%;
         position: relative;
@@ -116,11 +112,11 @@
 
     @keyframes display-description {
         from { top: 100%; }
-        to { top: 25%}
+        to { top: 30% }
     }
 
     @keyframes hide-description {
-        from { top: 25%; }
+        from { top: 30%; }
         to { top: 100%; }
     }
 </style>
