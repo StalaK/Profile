@@ -2,10 +2,20 @@
     <b-container>
         <b-row>
             <PortfolioBlock 
-            description="A website for displaying my portfolio of work"
-            titleBgColour="lightblue"
-            titleColour="grey">
-                <div class="developer-profile-text">Developer Profile</div>
+                description="A website for displaying my portfolio of work"
+                titleBgColour="lightblue"
+                titleColour="grey"
+                descriptionBgColour="white"
+                descriptionColour="lightblue">
+                <div class="portfolio-block-text">Developer Profile</div>
+            </PortfolioBlock>
+            <PortfolioBlock 
+                description="How many apocalyptic events have you survived?"
+                titleBgColour="black"
+                titleColour="white"
+                descriptionBgColour="white"
+                descriptionColour="white">
+                <div class="portfolio-block-text">Am I Being Raptured?</div>
             </PortfolioBlock>
         </b-row>
     </b-container>
@@ -24,9 +34,9 @@
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
 
-    .developer-profile-text {
+    .portfolio-block-text {
         font-family: 'Lexend Tera', sans-serif;
-        font-style:oblique;
+        font-style: oblique;
         padding: 10px;
     }
 </style>

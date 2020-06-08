@@ -4,7 +4,8 @@
             <div class="portfolio-title">
                 <slot></slot>
             </div>
-            <div class="portfolio-description" :style="portfolioDescriptionStyle">
+            <div class="portfolio-description" :style="portfolioDescriptionText">
+                <div class="description-background" :style="portfolioDescriptionBackground"></div>
                 {{ description }}
             </div>
         </div>
@@ -28,7 +29,7 @@
                 type: String,
                 required: true
             },
-            descriptionbgColour: {
+            descriptionBgColour: {
                 type: String,
                 default: 'black',
                 required: false
@@ -52,7 +53,8 @@
         data () {
             return {
                 portfolioBlockStyle: {},
-                portfolioDescriptionStyle: {}
+                portfolioDescriptionBackground: {},
+                portfolioDescriptionText: {}
             }
         },
         mounted: function () {
@@ -63,8 +65,11 @@
                 'color': this.titleColour
             };
 
-            this.portfolioDescriptionStyle = {
-                'background-color': this.descriptionbgColour,
+            this.portfolioDescriptionBackground = {
+                'background-color': this.descriptionBgColour,
+            };
+
+            this.portfolioDescriptionText = {
                 'color': this.descriptionColour
             };
         }
@@ -104,19 +109,27 @@
     }
 
     .portfolio-description {
-        opacity: 50%;
         position: relative;
         top: 100%;
         height: 100%;
     }
 
+    .description-background {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+
     @keyframes display-description {
         from { top: 100%; }
-        to { top: 30% }
+        to { top: 50% }
     }
 
     @keyframes hide-description {
-        from { top: 30%; }
+        from { top: 50%; }
         to { top: 100%; }
     }
 </style>
