@@ -6,7 +6,7 @@
                 titleBgColour="lightblue"
                 titleColour="grey"
                 descriptionBgColour="white"
-                descriptionColour="lightblue">
+                descriptionColour="black">
                 <div class="portfolio-block-text">Developer Profile</div>
             </PortfolioBlock>
             <PortfolioBlock 
