@@ -17,6 +17,15 @@
                 descriptionColour="white">
                 <div class="portfolio-block-text">Am I Being Raptured?</div>
             </PortfolioBlock>
+
+            <PortfolioBlock 
+                description="Martial Arts student management"
+                titleBgColour="tomato"
+                titleColour="white"
+                descriptionBgColour="orange"
+                descriptionColour="white">
+                <div class="tenko-text">TENKO</div>
+            </PortfolioBlock>
         </b-row>
     </b-container>
 </template>
@@ -32,11 +41,17 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chango&family=Lexend+Tera&display=swap');
 
     .portfolio-block-text {
         font-family: 'Lexend Tera', sans-serif;
         font-style: oblique;
         padding: 10px;
+    }
+
+    .tenko-text {
+        padding: 10px;
+        font-family: 'Chango', cursive;
+        font-size: 20pt;
     }
 </style>
