@@ -2,7 +2,6 @@
     <b-container>
         <b-row>
             <a href="https://github.com/StalaK"><img src="../assets/github.png" alt="GitHub" /></a>
-            <a href="https://www.linkedin.com/in/josh-hughes-51943987/"><img src="../assets/LI-Logo.png" alt="LinkedIn" style="width:200px; height:auto;" /></a>
         </b-row>
         <b-row>
             <p>
