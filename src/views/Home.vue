@@ -11,6 +11,7 @@
                     <li>Styling</li>
                     <li>Actual content</li>
                     <li>Fix PortfolioBlock images</li>
+                    <li>Complete Moodal component and release as NPM</li>
                 </ol>
             </p>
         </b-row>

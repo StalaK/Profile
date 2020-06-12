@@ -27,7 +27,16 @@
                 <div class="tenko-text">TENKO</div>
             </PortfolioBlock>
             <Moodal>
-                <template v-slot:launch>Moodal</template>
+                <template v-slot:launch>
+                    <PortfolioBlock 
+                        description="Modals for Vue"
+                        titleBgColour="white"
+                        titleColour="black"
+                        descriptionBgColour="black"
+                        descriptionColour="grey">
+                        <div class="tenko-text">Moodal</div>
+                    </PortfolioBlock>
+                </template>
                 <template v-slot:content>stuff</template>
             </Moodal>
         </b-row>
@@ -60,4 +69,5 @@
         font-family: 'Chango', cursive;
         font-size: 20pt;
     }
+
 </style>
