@@ -26,16 +26,22 @@
                 descriptionColour="white">
                 <div class="tenko-text">TENKO</div>
             </PortfolioBlock>
+            <Moodal>
+                <template v-slot:launch>Moodal</template>
+                <template v-slot:content>stuff</template>
+            </Moodal>
         </b-row>
     </b-container>
 </template>
 
 <script>
     import PortfolioBlock from '@/components/PortfolioBlock'
+    import Moodal from '@/components/Moodal'
 
     export default {
         components: {
-            PortfolioBlock
+            PortfolioBlock,
+            Moodal
         }    
     }
 </script>
