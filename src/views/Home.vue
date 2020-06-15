@@ -5,13 +5,7 @@
         </b-row>
         <b-row>
             <p>
-                Todo:
-                <ol>
-                    <li>Styling</li>
-                    <li>Actual content</li>
-                    <li>Fix PortfolioBlock images</li>
-                    <li>Complete Moodal component and release as NPM</li>
-                </ol>
+                Hi, I'm Josh Hughes. A full stack developer from Leeds, UK. I'm still working on the design of this site and what content I want on this page, so bear with me.
             </p>
         </b-row>
     </b-container>
