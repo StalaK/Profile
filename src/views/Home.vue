@@ -4,14 +4,16 @@
             <h1 v-html="post.title" class="post-title" />
             <div v-html="post.content" class="post-content" />
             <div class="post-footer">
-                <i>Posted on {{ post.date }}.</i> 
-                <i v-if="post.date !== post.modified"> Last updated: {{ post.modified }}</i>
+                <i>Posted on {{ formatDate(post.date) }}.</i> 
+                <i v-if="post.date !== post.modified"> Last updated: {{ formatDate(post.date) }}</i>
             </div>
         </b-row>
     </b-container>
 </template>
 
 <script>
+    import moment from 'moment'
+    
     export default {
         data() {
             return {
@@ -24,6 +26,11 @@
                 .then((responseJson) => {
                     this.posts = Array.from(responseJson.posts)
                 })
+        },
+        methods: {
+            formatDate: function(date) {
+                return moment(date).format('MMMM Do YYYY, hh:mm:ss');
+            }
         }
     }
 </script>
