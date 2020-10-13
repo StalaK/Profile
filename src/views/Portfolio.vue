@@ -115,6 +115,38 @@
                     </b-row>
                 </span>
             </b-modal>
+            <span @click="showModal('datr')">
+                <PortfolioBlock 
+                    description="Autofill unit test data"
+                    titleBgColour="teal"
+                    titleColour="white"
+                    descriptionBgColour="cadetblue"
+                    descriptionColour="white">
+                    <div class="portfolio-block-text">Datr</div>
+                </PortfolioBlock>
+            </span>
+            <b-modal ref="datr" title="Datr" ok-only ok-title="Close" ok-variant="secondary">
+                <span class="modal-content">
+                    <b-row class="modal-section">
+                        <p>
+                            Datr is a library to auto-populate class properties in unit tests.<br />
+                            The initial purpose of this is to speed up the writing of unit tests by removing the need
+                            to populate fields which are unrelated to the test, but may cause the test to fail due to 
+                            validation. <br />
+                            Datr also has a secondary purpose of randomizing the data values, ensuring that the tests are
+                            run with a wide range of values instead of the usual static and hard coded values. <br />
+                            Datr is currently in development and I'm currently doing all ongoing development work in the 
+                            master branch, therefore I currently cannot guarantee that the project will build at this point.
+                        </p>
+                    </b-row>
+                    <b-row class="modal-section">
+                        <a href="https://github.com/StalaK/Datr" target="blank">
+                            <span class="github-link"><img src="../assets/github.png" alt="View Datr on Github" /></span>
+                            <span class="github-link"><h5 class="github-text">View Datr on Github</h5></span>
+                        </a>
+                    </b-row>
+                </span>
+            </b-modal>
         </b-row>
     </b-container>
 </template>
