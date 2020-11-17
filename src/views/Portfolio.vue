@@ -135,8 +135,9 @@
                             validation. <br />
                             Datr also has a secondary purpose of randomizing the data values, ensuring that the tests are
                             run with a wide range of values instead of the usual static and hard coded values. <br />
-                            Datr is currently in development and I'm currently doing all ongoing development work in the 
-                            master branch, therefore I currently cannot guarantee that the project will build at this point.
+                            
+                            Datr is now available as a Nuget package. Visit the Github page below for more information of 
+                            how to install and use it in your projects.
                         </p>
                     </b-row>
                     <b-row class="modal-section">
