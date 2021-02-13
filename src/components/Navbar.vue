@@ -1,7 +1,7 @@
 <template>
-    <b-container>
+    <b-container class="header">
         <b-navbar toggleable="sm">
-            <b-navbar-brand to="/"><h2>Josh Hughes</h2></b-navbar-brand>
+            <b-navbar-brand to="/"><h2 class="title">Josh Hughes</h2></b-navbar-brand>
             <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
             <b-collapse id="navbar-collapse" is-nav>
                 <b-navbar-nav>
@@ -18,7 +18,15 @@
 <script>
 </script>
 
-<style scoped>
+<style>
+
+    .title {
+        color: #c0c0c0;
+    }
+
+    nav .navbar-nav li a{
+        color: #c0c0c0 !important;
+    }
 
     .link:hover {
         text-decoration: underline;

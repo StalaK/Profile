@@ -1,0 +1,13 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(180deg, #666666, #2f4f4f);
+    color: #c0c0c0 !important;
+    height: 100%;
+}
+
+#app {
+    min-height: 100%;
+}
