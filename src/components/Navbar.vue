@@ -1,8 +1,9 @@
 <template>
     <b-container class="header">
-        <b-navbar toggleable="sm">
-            <b-navbar-brand to="/"><h2 class="title">Josh Hughes</h2></b-navbar-brand>
-            <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
+        <b-navbar toggleable="sm" variant="faded">
+            <b-navbar-toggle target="navbar-collapse">
+                <h2 class="title">Josh Hughes</h2>
+            </b-navbar-toggle>
             <b-collapse id="navbar-collapse" is-nav>
                 <b-navbar-nav>
                     <b-nav-item to="/" class="link">Home</b-nav-item>
@@ -20,11 +21,21 @@
 
 <style>
 
+    .navbar-toggler {
+        border-color: none !important;
+        border: none !important;
+    }
     .title {
         color: #c0c0c0;
+        border: none !important;
     }
 
-    nav .navbar-nav li a{
+    .link {
+        color: #c0c0c0 !important;
+        font-size: 24pt;
+    }
+
+    nav .navbar-nav li a {
         color: #c0c0c0 !important;
     }
 

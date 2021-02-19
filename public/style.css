@@ -4,8 +4,21 @@ html {
 
 body {
     background: linear-gradient(180deg, #666666, #2f4f4f);
-    color: #c0c0c0 !important;
     height: 100%;
+}
+
+
+a:link {
+    color: #4c7f7f !important;
+}
+
+a:visited {
+    color: #426f6f !important;
+}
+
+a:hover {
+    /* color: #2f4f4f !important; */
+    color: hotpink !important;
 }
 
 #app {

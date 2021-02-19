@@ -69,6 +69,7 @@
     .post-title {
         margin: 15px 5px 15px 5px;
         text-align: center;
+        color: #2f4f4f !important;
     }
 
     .post-content {
