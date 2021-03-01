@@ -18,30 +18,21 @@
                     <li>Javascript</li>
                     <li>Visual Basic</li>
                     <li>.Net and .Net Core</li>
-                    <li>SQL</li>
-                    <li>Selenium</li>
+                    <li>SQL (T-SQL, PostgreSQL)</li>
+                    <li>Entity Framework (Core)</li>
+                    <li>Git</li>
+                    <li>Azure DevOps</li>
                 </ul>
             </div>
             <div class="tech-list">
                 <ul>
-                    <li>Entity Framework (Core)</li>
                     <li>VueJS</li>
                     <li>ExpressJS</li>
                     <li>Xamarin Forms</li>
-                    <li>Git</li>
-                    <li>HP UFT/QTP</li>
                     <li>Bootstrap</li>
-                </ul>
-            </div> 
-            <div class="tech-list">
-                <ul>
-                    <li>MSSQL (T-SQL)</li>
-                    <li>PostgreSQL</li>
                     <li>Jira</li>
                     <li>Octopus Deploy</li>
                     <li>TeamCity</li>
-                    <li>HP Quality Center</li>
-                    <li>IBM Rational Quality Manager</li>
                 </ul>
             </div> 
         </div>
