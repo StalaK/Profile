@@ -148,6 +148,32 @@
                     </b-row>
                 </span>
             </b-modal>
+            <span @click="showModal('Roulettesy')">
+                <PortfolioBlock 
+                    description="See a random Etsy item"
+                    titleBgColour="#f6b26b"
+                    titleColour="white"
+                    descriptionBgColour="#fbe0c3"
+                    descriptionColour="white">
+                    <div class="portfolio-block-text">Roulettesy!</div>
+                </PortfolioBlock>
+            </span>
+            <b-modal ref="Roulettesy" title="Roulettesy" ok-only ok-title="Close" ok-variant="secondary">
+                <span class="modal-content">
+                    <b-row class="modal-section">
+                        <p>
+                            Roulettesy! is a new way to explore Etsy, written in VueJS. View an available 
+                            item for sale at random. Find a gift idea, something new for yourself or just 
+                            browse the wild and wacky things available.
+                        </p>
+                    </b-row>
+                    <b-row class="modal-section">
+                        <a href="https://roulettesy.netlify.app/" target="blank">
+                            <span class="github-link"><h5 class="github-text">Visit Roulettesy!</h5></span>
+                        </a>
+                    </b-row>
+                </span>
+            </b-modal>
         </b-row>
     </b-container>
 </template>
